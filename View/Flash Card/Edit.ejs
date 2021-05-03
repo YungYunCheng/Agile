@@ -1,0 +1,15 @@
+<% layout('../Layouts/mainlayout.ejs') -%>
+<br/><br/>
+<b>Edit your Flash Card</b>
+
+<form action="/FlashCard/Update" method="POST">
+<b>ID: </b> <%= flashcards._id %> <br/>
+<b>Context:</b> 
+<input type='hidden' name="_id" value= <%= flashcards._id %> /> <br/>
+<input type='text'  name="Title" 
+       value="<%= flashcards.reviewName ? flashcards.Title : '' %>"  /><br/>
+<input type='text'  name="context" 
+       value="<%= flashcards.context ? flashcards.context : '' %>"  /><br/>
+<input type="submit" value="Submit">
+</form>
+<%= errorMessage %>

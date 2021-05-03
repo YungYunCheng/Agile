@@ -1,0 +1,20 @@
+<% layout('../Layouts/mainlayout.ejs') -%><br/>
+FlashCard <%= flashcardObj._Title %>
+<form action="/FlashCard/CreateFlashCard" method="POST"> 
+<input type="hidden" name="_id" value='<%= flashcardObj._id%>'></hidden>  
+    <table>
+        <tr>
+            <td>Title:</td>
+            <td><input id="title" name="title" type="text"></td>
+        </tr>
+        <tr>
+            <td>Context:</td>
+            <td><input id="context" name="context" type="text"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td> <input type="submit" value="Submit"></td>
+        </tr>
+    </table>
+</form>
+<%= errorMessage %><br/>

@@ -1,7 +1,0 @@
-<% layout('../Layouts/mainlayout.ejs') -%>
-<br/><br/>
-<b><% flashcards.movieName %></b>
-<% for(let i = 0; i < flashcards.length; i++){ %>
-    <b>Title:</b> <%= flashcards[i].Title %>  
-    <b>Context:</b> <%= flashcards[i].context ? flashcards[i].context : ""%>
-<% } %>

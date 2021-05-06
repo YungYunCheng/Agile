@@ -18,9 +18,9 @@ app.use(express.json());
 
 console.log("Hi");
 
-// Enable routing and use port 1337.
+// Enable routing and use port 5000.
 require('./router')(app);
-app.set('port', 1337);
+app.set('port', 5000);
 
 // Set up ejs templating.
 app.engine('ejs', engine);

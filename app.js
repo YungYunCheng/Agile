@@ -1,6 +1,6 @@
 // Create pooled data connection.
 var mongoose = require('mongoose');
-const DB_URI = 'mongodb://localhost:27017/retailerDB';
+const DB_URI = 'mongodb://localhost:27017/ADB';
 let options = { useNewUrlParser: true , useUnifiedTopology: true };
 mongoose.connect(DB_URI, options);
 

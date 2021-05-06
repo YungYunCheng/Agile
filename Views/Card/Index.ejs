@@ -1,0 +1,19 @@
+<% layout('../layouts/mainlayout.ejs') -%>
+<br/><br/>
+<b>Flash Card Listing</b>
+<br/><br/>
+<table>
+<% for(var i=0; i < cards.length; i++) { %>
+    <tr>
+      <td><b>Card Title:</b><%= cards[i].title %></td>
+      <td><a href='/Card/Detail?title=<%= cards[i].title %>'>Detail</a></td>
+    </tr>
+ <% } %>
+</table>
+  
+<footer>
+    <p>Created by Group 14 - Aron Y., Daphney C., Richard W., Clinton W.</p>
+</footer>
+</body>
+</html>
+
